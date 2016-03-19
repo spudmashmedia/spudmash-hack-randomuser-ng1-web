@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="jumbotron">
+    <img class="img-circle center-block img-responsive" ng-src="{{main.data.results[0].user.picture.large}}" alt="{{main.data.results[0].user.name.first}} {{main.data.results[0].user.name.last}}">
+    <h1>{{main.data.results[0].user.name.first}} {{main.data.results[0].user.name.last}}</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 text-left lead">Address</div>
+        <div class="col-md-6">
+          <p class="text-left">{{main.data.results[0].user.location.street}}</p>
+          <p class="text-left">{{main.data.results[0].user.location.city}} {{main.data.results[0].user.location.state}} {{main.data.results[0].user.location.zip}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 text-left lead">Phone</div>
+        <div class="col-md-4">
+          <p class="text-left">{{main.data.results[0].user.phone}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 text-left lead">Email</div>
+        <div class="col-md-4">
+          <p class="lead text-left">{{main.data.results[0].user.email}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <span class="btn btn-lg btn-success" ng-click="main.GetUserServiceClick()">Get Random User</span>
+      </div>
+    </div>
+  </div>
+</div>
